@@ -3,7 +3,7 @@ package in.tosc.eventful.fragments.events;
 
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +12,7 @@ import in.tosc.eventful.R;
 
 
 /**
- * A simple {@link android.support.v4.app.Fragment} subclass.
+ * A simple {@link android.app.Fragment} subclass.
  * Use the {@link EventItemSliderFragment#newInstance} factory method to
  * create an instance of this fragment.
  *
