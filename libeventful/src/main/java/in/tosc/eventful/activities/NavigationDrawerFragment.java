@@ -1,4 +1,4 @@
-package in.tosc.eventful;
+package in.tosc.eventful.activities;
 
 
 import android.app.Activity;
@@ -21,6 +21,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import in.tosc.eventful.R;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.
