@@ -6,6 +6,7 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,9 +18,13 @@ import android.widget.TextView;
 import in.tosc.eventful.R;
 import in.tosc.eventful.fragments.AboutFragment;
 import in.tosc.eventful.fragments.ContactFragment;
+import in.tosc.eventful.fragments.reachus.ReachUsFragment;
 
-public class MainDrawerActivity extends Activity
+public abstract class MainDrawerActivity
+        extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+
+    private static String TAG = "MainDrawerActivity";
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -35,23 +40,55 @@ public class MainDrawerActivity extends Activity
      * Array of fragments to store the top level fragments
      */
 
-    public Fragment[] topFragments;
+    public static Fragment[] topFragments;
+
+    /**
+     * String array of names to assign to the top fragments
+     */
+
+    public static String[] topFragmentNames;
 
 
     /**
      * populate {@link #topFragments} with fragments of your choice
-     * after calling super.onCreate()
      * <p>
      * for example
      * <pre>
      *     {@code
-     *             topFragments = new android.app.Fragment[]{
-     *             AboutFragment.newInstance("A", "A"),
-     *             ContactFragment.newInstance("a", "a")
-     *             };
+     *          topFragments = new android.app.Fragment[]{
+     *              AboutFragment.newInstance("A", "A"),
+     *              ContactFragment.newInstance("a", "a")
+     *          };
+     *          topFragmentNames = new String[] {
+     *              "About",
+     *              "Contact"
+     *          };
+
      *      }
      * </pre>
      */
+
+    public abstract void setTopFragments();
+
+
+    public MainDrawerActivity () {
+        topFragments = new Fragment[]{
+                AboutFragment.newInstance("A", "A"),
+                ContactFragment.newInstance("a", "a"),
+                ReachUsFragment.newInstance("b", "b")
+        };
+        topFragmentNames = new String[] {
+                "About",
+                "Contact",
+                "Reach Us"
+        };
+        setTopFragments();
+        if (topFragments.length != topFragmentNames.length) {
+            Log.wtf(TAG, "Number of fragments and number of Fragment Names must be same !!!");
+        }
+
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,11 +104,6 @@ public class MainDrawerActivity extends Activity
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
 
-        topFragments = new Fragment[]{
-                AboutFragment.newInstance("A", "A"),
-                ContactFragment.newInstance("a", "a")
-        };
-
     }
 
     @Override
@@ -83,18 +115,15 @@ public class MainDrawerActivity extends Activity
                 .commit();
     }
 
+    /**
+     *
+     * Defines what will be done when fragment is attached with this activity
+     * For eg. changing the title of the App
+     *
+     * @param number The position of the fragment (starts from 1)
+     */
+
     public void onSectionAttached(int number) {
-        switch (number) {
-            case 1:
-                mTitle = getString(R.string.title_section1);
-                break;
-            case 2:
-                mTitle = getString(R.string.title_section2);
-                break;
-            case 3:
-                mTitle = getString(R.string.title_section3);
-                break;
-        }
     }
 
     public void restoreActionBar() {
@@ -128,48 +157,6 @@ public class MainDrawerActivity extends Activity
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-    public static class PlaceholderFragment extends Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
-        private static final String ARG_SECTION_NUMBER = "section_number";
-
-        /**
-         * Returns a new instance of this fragment for the given section
-         * number.
-         */
-        public static PlaceholderFragment newInstance(int sectionNumber) {
-            PlaceholderFragment fragment = new PlaceholderFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-            fragment.setArguments(args);
-            return fragment;
-        }
-
-        public PlaceholderFragment() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_placeholder, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
-            return rootView;
-        }
-
-        @Override
-        public void onAttach(Activity activity) {
-            super.onAttach(activity);
-            ((MainDrawerActivity) activity).onSectionAttached(
-                    getArguments().getInt(ARG_SECTION_NUMBER));
-        }
     }
 
 }
