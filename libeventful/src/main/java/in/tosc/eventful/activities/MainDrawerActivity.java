@@ -15,6 +15,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.widget.TextView;
 
 import in.tosc.eventful.R;
+import in.tosc.eventful.fragments.AboutFragment;
+import in.tosc.eventful.fragments.ContactFragment;
 
 public class MainDrawerActivity extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -29,6 +31,28 @@ public class MainDrawerActivity extends Activity
      */
     private CharSequence mTitle;
 
+    /**
+     * Array of fragments to store the top level fragments
+     */
+
+    public Fragment[] topFragments;
+
+
+    /**
+     * populate {@link #topFragments} with fragments of your choice
+     * after calling super.onCreate()
+     * <p>
+     * for example
+     * <pre>
+     *     {@code
+     *             topFragments = new android.app.Fragment[]{
+     *             AboutFragment.newInstance("A", "A"),
+     *             ContactFragment.newInstance("a", "a")
+     *             };
+     *      }
+     * </pre>
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +66,12 @@ public class MainDrawerActivity extends Activity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+        topFragments = new Fragment[]{
+                AboutFragment.newInstance("A", "A"),
+                ContactFragment.newInstance("a", "a")
+        };
+
     }
 
     @Override
@@ -49,7 +79,7 @@ public class MainDrawerActivity extends Activity
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .replace(R.id.container, topFragments[position])
                 .commit();
     }
 
