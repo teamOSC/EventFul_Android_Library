@@ -1,9 +1,7 @@
 package in.tosc.eventful.fragments.register;
 
 
-
 import android.os.Bundle;
-import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +14,6 @@ import in.tosc.eventful.R;
  * A simple {@link android.webkit.WebViewFragment} subclass.
  * Use the {@link RegisterWebViewFragment#newInstance} factory method to
  * create an instance of this fragment.
- *
  */
 public class RegisterWebViewFragment extends WebViewFragment {
     // TODO: Rename parameter arguments, choose names that match
@@ -46,6 +43,7 @@ public class RegisterWebViewFragment extends WebViewFragment {
         fragment.setArguments(args);
         return fragment;
     }
+
     public RegisterWebViewFragment() {
         // Required empty public constructor
     }

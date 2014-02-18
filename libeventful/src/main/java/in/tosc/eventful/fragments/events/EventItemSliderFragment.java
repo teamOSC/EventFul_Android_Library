@@ -1,9 +1,8 @@
 package in.tosc.eventful.fragments.events;
 
 
-
-import android.os.Bundle;
 import android.app.Fragment;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +14,6 @@ import in.tosc.eventful.R;
  * A simple {@link android.app.Fragment} subclass.
  * Use the {@link EventItemSliderFragment#newInstance} factory method to
  * create an instance of this fragment.
- *
  */
 public class EventItemSliderFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
@@ -45,6 +43,7 @@ public class EventItemSliderFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
+
     public EventItemSliderFragment() {
         // Required empty public constructor
     }

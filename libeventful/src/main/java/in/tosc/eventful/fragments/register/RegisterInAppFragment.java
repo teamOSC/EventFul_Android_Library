@@ -1,9 +1,8 @@
 package in.tosc.eventful.fragments.register;
 
 
-
-import android.os.Bundle;
 import android.app.Fragment;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +14,6 @@ import in.tosc.eventful.R;
  * A simple {@link android.app.Fragment} subclass.
  * Use the {@link RegisterInAppFragment#newInstance} factory method to
  * create an instance of this fragment.
- *
  */
 public class RegisterInAppFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
@@ -45,6 +43,7 @@ public class RegisterInAppFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
+
     public RegisterInAppFragment() {
         // Required empty public constructor
     }

@@ -1,19 +1,14 @@
 package in.tosc.eventful.activities;
 
-import android.app.Activity;
-
 import android.app.ActionBar;
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.support.v4.widget.DrawerLayout;
-import android.widget.TextView;
 
 import in.tosc.eventful.R;
 import in.tosc.eventful.fragments.AboutFragment;
@@ -51,7 +46,7 @@ public abstract class MainDrawerActivity
 
     /**
      * populate {@link #topFragments} with fragments of your choice
-     * <p>
+     * <p/>
      * for example
      * <pre>
      *     {@code
@@ -63,7 +58,7 @@ public abstract class MainDrawerActivity
      *              "About",
      *              "Contact"
      *          };
-
+     *
      *      }
      * </pre>
      */
@@ -71,13 +66,13 @@ public abstract class MainDrawerActivity
     public abstract void setTopFragments();
 
 
-    public MainDrawerActivity () {
+    public MainDrawerActivity() {
         topFragments = new Fragment[]{
                 AboutFragment.newInstance("A", "A"),
                 ContactFragment.newInstance("a", "a"),
                 ReachUsFragment.newInstance("b", "b")
         };
-        topFragmentNames = new String[] {
+        topFragmentNames = new String[]{
                 "About",
                 "Contact",
                 "Reach Us"
@@ -116,7 +111,6 @@ public abstract class MainDrawerActivity
     }
 
     /**
-     *
      * Defines what will be done when fragment is attached with this activity
      * For eg. changing the title of the App
      *
