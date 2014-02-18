@@ -7,4 +7,8 @@ import in.tosc.eventful.activities.MainDrawerActivity;
  */
 public class MainActivity extends MainDrawerActivity {
 
+    @Override
+    public void setTopFragments() {
+
+    }
 }
