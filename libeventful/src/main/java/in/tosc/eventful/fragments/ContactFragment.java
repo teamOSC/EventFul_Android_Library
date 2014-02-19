@@ -6,8 +6,16 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+
+import com.haarman.listviewanimations.swinginadapters.AnimationAdapter;
+import com.haarman.listviewanimations.swinginadapters.prepared.SwingRightInAnimationAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import in.tosc.eventful.R;
+import in.tosc.eventful.utils.GoogleCardsAdapter;
 
 
 /**
@@ -61,7 +69,17 @@ public class ContactFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_contact, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_contact, container, false);
+        List<String> contactList = new ArrayList<String>();
+        //TODO: Get these from the xml files
+        contactList.add("Umair");
+        contactList.add("omerjerk");
+        GoogleCardsAdapter mAdapter = new GoogleCardsAdapter(getActivity(), contactList);
+        ListView contactsListView = (ListView) rootView.findViewById(R.id.list_contacts);
+        AnimationAdapter animAdapter = new SwingRightInAnimationAdapter(mAdapter);
+        animAdapter.setAbsListView(contactsListView);
+        contactsListView.setAdapter(animAdapter);
+        return rootView;
     }
 
 
