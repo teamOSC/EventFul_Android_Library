@@ -5,7 +5,9 @@ import android.app.Fragment;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import android.content.Context;
 import in.tosc.eventful.activities.MainDrawerActivity;
+import in.tosc.eventful.data.Contacts;
 import in.tosc.eventful.fragments.AboutFragment;
 import in.tosc.eventful.fragments.ContactFragment;
 import in.tosc.eventful.fragments.reachus.ReachUsFragment;
@@ -27,14 +29,14 @@ public class MainActivity extends MainDrawerActivity {
 
     @Override
     public void setTopFragments() {
-        Map<String, String> contactsMap = new LinkedHashMap<String, String>();
-        contactsMap.put("Umair", "omerjerk@gmail.com");
-        contactsMap.put("Arnav", "championswimmer@gmail.com");
-        contactsMap.put("Saurav", "sauravtom@gmail.com");
+
+        Contacts contacts = new Contacts(this);
+        contacts.setContactNames(R.array.contact_names);
+        contacts.setContactEmails(R.array.contact_emails);
 
         topFragments = new Fragment[]{
                 AboutFragment.newInstance("A", "A"),
-                ContactFragment.newInstance(contactsMap)
+                ContactFragment.newInstance(contacts)
         };
 
     }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contact_names">
+        <item>Arnav</item>
+        <item>Umair</item>
+        <item>Saurav</item>
+    </string-array>
+    <string-array name="contact_emails">
+        <item>c@osc.in</item>
+        <item>o@osc.in</item>
+        <item>s@osc.in</item>
+    </string-array>
+</resources>
