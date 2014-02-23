@@ -10,6 +10,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 import in.tosc.eventful.R;
 import in.tosc.eventful.fragments.AboutFragment;
 import in.tosc.eventful.fragments.ContactFragment;
@@ -43,6 +46,10 @@ public abstract class MainDrawerActivity
 
     public static String[] topFragmentNames;
 
+    /**
+     * Map containing the key-value pair values for contacts fragment
+     */
+    public static Map<String, String> contactsMap;
 
     /**
      * populate {@link #topFragments} with fragments of your choice
@@ -65,11 +72,14 @@ public abstract class MainDrawerActivity
 
     public abstract void setTopFragments();
 
-
     public MainDrawerActivity() {
+        Map<String, String> contactsMap = new LinkedHashMap<String, String>();
+        contactsMap.put("A", "C");
+        contactsMap.put("B", "D");
+
         topFragments = new Fragment[]{
                 AboutFragment.newInstance("A", "A"),
-                ContactFragment.newInstance("a", "a"),
+                ContactFragment.newInstance(contactsMap),
                 ReachUsFragment.newInstance("b", "b")
         };
         topFragmentNames = new String[]{
