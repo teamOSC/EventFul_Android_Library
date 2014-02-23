@@ -15,6 +15,16 @@ import in.tosc.eventful.fragments.reachus.ReachUsFragment;
  */
 public class MainActivity extends MainDrawerActivity {
 
+
+    @Override
+    public void setTopFragmentNames() {
+        topFragmentNames = new String[]{
+                "About",
+                "Contact"
+        };
+
+    }
+
     @Override
     public void setTopFragments() {
         Map<String, String> contactsMap = new LinkedHashMap<String, String>();
@@ -26,10 +36,7 @@ public class MainActivity extends MainDrawerActivity {
                 AboutFragment.newInstance("A", "A"),
                 ContactFragment.newInstance(contactsMap)
         };
-        topFragmentNames = new String[]{
-                "About",
-                "Contact"
-        };
 
     }
+
 }

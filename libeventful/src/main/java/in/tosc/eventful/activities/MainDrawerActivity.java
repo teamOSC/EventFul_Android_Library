@@ -72,6 +72,8 @@ public abstract class MainDrawerActivity
 
     public abstract void setTopFragments();
 
+    public abstract void setTopFragmentNames();
+
     public MainDrawerActivity() {
         Map<String, String> contactsMap = new LinkedHashMap<String, String>();
         contactsMap.put("A", "C");
@@ -87,11 +89,7 @@ public abstract class MainDrawerActivity
                 "Contact",
                 "Reach Us"
         };
-        setTopFragments();
-        if (topFragments.length != topFragmentNames.length) {
-            Log.wtf(TAG, "Number of fragments and number of Fragment Names must be same !!!");
-        }
-
+        setTopFragmentNames();
 
     }
 
@@ -99,6 +97,10 @@ public abstract class MainDrawerActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_drawer);
+        setTopFragments();
+        if (topFragments.length != topFragmentNames.length) {
+            Log.wtf(TAG, "Number of fragments and number of Fragment Names must be same !!!");
+        }
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.navigation_drawer);
