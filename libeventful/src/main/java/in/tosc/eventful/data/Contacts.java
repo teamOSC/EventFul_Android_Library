@@ -11,6 +11,10 @@ public class Contacts {
     private String[] contactNames = {""};
     private String[] contactEmails = {""};
 
+    public Contacts (Context context) {
+        c = context;
+    }
+
     public void setContactNames (int resId) {
         contactNames = c.getResources().getStringArray(resId);
     }

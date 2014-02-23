@@ -75,18 +75,12 @@ public abstract class MainDrawerActivity
     public abstract void setTopFragmentNames();
 
     public MainDrawerActivity() {
-        Map<String, String> contactsMap = new LinkedHashMap<String, String>();
-        contactsMap.put("A", "C");
-        contactsMap.put("B", "D");
-
         topFragments = new Fragment[]{
                 AboutFragment.newInstance("A", "A"),
-                ContactFragment.newInstance(contactsMap),
                 ReachUsFragment.newInstance("b", "b")
         };
         topFragmentNames = new String[]{
                 "About",
-                "Contact",
                 "Reach Us"
         };
         setTopFragmentNames();
