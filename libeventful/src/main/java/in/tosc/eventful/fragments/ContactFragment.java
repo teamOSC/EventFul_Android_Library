@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 import in.tosc.eventful.R;
+import in.tosc.eventful.data.Contacts;
 import in.tosc.eventful.utils.GoogleCardsAdapter;
 
 
@@ -30,18 +31,18 @@ public class ContactFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
 
     // TODO: Rename and change types of parameters
-    private static Map<String, String> mContacts;
+    private static Contacts mContacts;
 
 
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param mContacts The contacts map object.
+     * @param mContacts The contacts object.
      * @return A new instance of fragment ContactFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ContactFragment newInstance(Map<String, String> mContacts) {
+    public static ContactFragment newInstance(Contacts mContacts) {
         ContactFragment fragment = new ContactFragment(mContacts);
         Bundle args = new Bundle();
         fragment.setArguments(args);
@@ -52,9 +53,8 @@ public class ContactFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public ContactFragment(Map<String, String> mContacts) {
-        // Required empty public constructor
-        this.mContacts = mContacts;
+    public ContactFragment(Contacts contacts) {
+        mContacts = contacts;
     }
 
     @Override
@@ -64,7 +64,7 @@ public class ContactFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_contact, container, false);
         List<String> contactList = new ArrayList<String>();
         //TODO: Get these from the xml files
-        for (String mContactItem : mContacts.keySet()) {
+        for (String mContactItem : mContacts.getContactNames()) {
             contactList.add(mContactItem);
         }
         GoogleCardsAdapter mAdapter = new GoogleCardsAdapter(getActivity(), contactList);
