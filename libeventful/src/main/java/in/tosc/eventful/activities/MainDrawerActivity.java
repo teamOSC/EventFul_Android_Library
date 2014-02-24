@@ -10,12 +10,10 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
 
 import in.tosc.eventful.R;
 import in.tosc.eventful.fragments.AboutFragment;
-import in.tosc.eventful.fragments.ContactFragment;
 import in.tosc.eventful.fragments.reachus.ReachUsFragment;
 
 public abstract class MainDrawerActivity

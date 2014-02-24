@@ -1,15 +1,10 @@
 package in.tosc.eventful.utils;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.support.v4.util.LruCache;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -63,7 +58,7 @@ public class GoogleCardsAdapter extends BaseAdapter {
         ViewHolder viewHolder;
         View view = convertView;
         if (view == null) {
-            view = LayoutInflater.from(mContext).inflate(R.layout.googlecards_card, parent, false);
+            view = LayoutInflater.from(mContext).inflate(R.layout.contact_googlecard, parent, false);
 
             viewHolder = new ViewHolder();
             viewHolder.textView = (TextView) view.findViewById(R.id.googlecards_card_textview);

@@ -2,15 +2,10 @@ package in.tosc.eventful.sampleapp;
 
 import android.app.Fragment;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-
-import android.content.Context;
 import in.tosc.eventful.activities.MainDrawerActivity;
 import in.tosc.eventful.data.Contacts;
 import in.tosc.eventful.fragments.AboutFragment;
-import in.tosc.eventful.fragments.ContactFragment;
-import in.tosc.eventful.fragments.reachus.ReachUsFragment;
+import in.tosc.eventful.fragments.contacts.ContactFragment;
 
 /**
  * Created by championswimmer on 18/2/14.
