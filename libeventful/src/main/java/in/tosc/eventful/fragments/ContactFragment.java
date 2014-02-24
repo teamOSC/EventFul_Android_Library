@@ -3,6 +3,7 @@ package in.tosc.eventful.fragments;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,25 +27,29 @@ import in.tosc.eventful.utils.GoogleCardsAdapter;
  * create an instance of this fragment.
  */
 public class ContactFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
 
-    // TODO: Rename and change types of parameters
-    private static Contacts mContacts;
+    private final static String TAG = "ContactFragment";
+
+    private static final String ARG_CONTACT_NAMES = "contact_names";
+    private static final String ARG_CONTACT_EMAILS = "contact_emails";
+
+    private String[] contactNames;
+    private String[] contactEmails;
 
 
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param mContacts The contacts object.
+     * @param contacts The contacts object.
      * @return A new instance of fragment ContactFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ContactFragment newInstance(Contacts mContacts) {
-        ContactFragment fragment = new ContactFragment(mContacts);
+    public static ContactFragment newInstance(Contacts contacts) {
+        ContactFragment fragment = new ContactFragment();
         Bundle args = new Bundle();
+        args.putStringArray(ARG_CONTACT_NAMES, contacts.getContactNames());
+        args.putStringArray(ARG_CONTACT_EMAILS, contacts.getContactEmails());
         fragment.setArguments(args);
         return fragment;
     }
@@ -53,21 +58,32 @@ public class ContactFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public ContactFragment(Contacts contacts) {
-        mContacts = contacts;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //Log.d(TAG, "onCreate called");
+        if (getArguments() != null) {
+            contactNames = getArguments().getStringArray(ARG_CONTACT_NAMES);
+            contactEmails = getArguments().getStringArray(ARG_CONTACT_EMAILS);
+        }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        //Log.d(TAG, "onCreateView called");
+
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_contact, container, false);
         List<String> contactList = new ArrayList<String>();
         //TODO: Get these from the xml files
-        for (String mContactItem : mContacts.getContactNames()) {
+        for (String mContactItem : contactNames) {
+            //Log.d(TAG, mContactItem);
             contactList.add(mContactItem);
         }
-        GoogleCardsAdapter mAdapter = new GoogleCardsAdapter(getActivity(), contactList);
+        GoogleCardsAdapter mAdapter = new GoogleCardsAdapter(getActivity().getApplicationContext(), contactList);
         ListView contactsListView = (ListView) rootView.findViewById(R.id.list_contacts);
         AnimationAdapter animAdapter = new SwingRightInAnimationAdapter(mAdapter);
         animAdapter.setAbsListView(contactsListView);
