@@ -9,7 +9,7 @@ import in.tosc.eventful.fragments.contacts.ContactFragment;
 /**
  * Created by championswimmer on 18/2/14.
  */
-public class MainActivity extends MainSwipeTabActivity {
+public class MainTabActivity extends MainSwipeTabActivity {
 
 
     @Override
