@@ -11,23 +11,23 @@ public class Contacts {
     private String[] contactNames = {""};
     private String[] contactEmails = {""};
 
-    public Contacts (Context context) {
+    public Contacts(Context context) {
         c = context;
     }
 
-    public void setContactNames (int resId) {
+    public void setContactNames(int resId) {
         contactNames = c.getResources().getStringArray(resId);
     }
 
-    public void setContactEmails (int resId) {
+    public void setContactEmails(int resId) {
         contactEmails = c.getResources().getStringArray(resId);
     }
 
-    public String[] getContactNames () {
+    public String[] getContactNames() {
         return contactNames;
     }
 
-    public String[] getContactEmails () {
+    public String[] getContactEmails() {
         return contactEmails;
     }
 

@@ -16,45 +16,55 @@ public class EventfulEvent {
     private String[] eventEndTimes = {""};
     private String[] eventContacts = {""};
 
-    public EventfulEvent (Context context) {
+    public EventfulEvent(Context context) {
         c = context;
     }
 
-    public void setEventNames (int resId) {
+    public void setEventNames(int resId) {
         eventNames = c.getResources().getStringArray(resId);
     }
-    public void setEventDescs (int resId) {
+
+    public void setEventDescs(int resId) {
         eventDescs = c.getResources().getStringArray(resId);
     }
-    public void setEventDates (int resId) {
+
+    public void setEventDates(int resId) {
         eventDates = c.getResources().getStringArray(resId);
     }
-    public void setEventStartTimes (int resId) {
+
+    public void setEventStartTimes(int resId) {
         eventStartTimes = c.getResources().getStringArray(resId);
     }
-    public void setEventEndTimes (int resId) {
+
+    public void setEventEndTimes(int resId) {
         eventEndTimes = c.getResources().getStringArray(resId);
     }
-    public void setEventContacts (int resId) {
+
+    public void setEventContacts(int resId) {
         eventContacts = c.getResources().getStringArray(resId);
     }
 
-    public String[] getEventNames () {
+    public String[] getEventNames() {
         return eventNames;
     }
-    public String[] getEventDescs () {
+
+    public String[] getEventDescs() {
         return eventDescs;
     }
-    public String[] getEventDates () {
+
+    public String[] getEventDates() {
         return eventDates;
     }
-    public String[] getEventStartTimes () {
+
+    public String[] getEventStartTimes() {
         return eventStartTimes;
     }
-    public String[] getEventEndTimes () {
+
+    public String[] getEventEndTimes() {
         return eventEndTimes;
     }
-    public String[] getEventContacts () {
+
+    public String[] getEventContacts() {
         return eventContacts;
     }
 }

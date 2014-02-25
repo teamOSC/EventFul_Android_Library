@@ -1,25 +1,17 @@
 package in.tosc.eventful.fragments.contacts;
 
 
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-
 import android.widget.TextView;
-import com.haarman.listviewanimations.swinginadapters.AnimationAdapter;
-import com.haarman.listviewanimations.swinginadapters.prepared.SwingRightInAnimationAdapter;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import in.tosc.eventful.R;
 import in.tosc.eventful.data.Contacts;
-import in.tosc.eventful.utils.GoogleCardsAdapter;
 
 
 /**

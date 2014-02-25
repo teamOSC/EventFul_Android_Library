@@ -62,7 +62,7 @@ public abstract class MainDrawerActivity
      * </pre></p>
      */
 
-    public void prepareTopFragments(){
+    public void prepareTopFragments() {
         /**
          */
         topFragments = new Fragment[]{
@@ -101,8 +101,8 @@ public abstract class MainDrawerActivity
      * {@inheritDoc}
      * We also set the title of the of activity according to selected
      * fragment here.
-     * @param position
      *
+     * @param position
      */
     @Override
     public void onNavigationDrawerItemSelected(int position) {

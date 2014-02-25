@@ -6,10 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import in.tosc.eventful.R;
 
 import java.util.List;
-
-import in.tosc.eventful.R;
 
 /**
  * Created by omerjerk on 19/2/14.

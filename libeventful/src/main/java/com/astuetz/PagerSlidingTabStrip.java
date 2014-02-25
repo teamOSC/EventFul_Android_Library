@@ -40,7 +40,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import in.tosc.eventful.R;
 
-
 import java.util.Locale;
 
 public class PagerSlidingTabStrip extends HorizontalScrollView {
