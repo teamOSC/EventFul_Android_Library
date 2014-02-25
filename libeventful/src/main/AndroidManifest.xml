@@ -8,6 +8,7 @@
         android:label="@string/app_name">
         <activity
             android:name=".activities.MainDrawerActivity"
+            android:screenOrientation="locked"
             android:label="@string/title_activity_main_drawer"/>
     </application>
 
