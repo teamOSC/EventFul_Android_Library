@@ -45,14 +45,11 @@ public abstract class MainDrawerActivity
     public static String[] topFragmentNames;
 
     /**
-     * Map containing the key-value pair values for contacts fragment
-     */
-    public static Map<String, String> contactsMap;
-
-    /**
      * populate {@link #topFragments} with fragments of your choice
-     * <p/>
-     * for example
+     * <p>
+     * Prepare any data objects like Contacts and EventfulEvents
+     * here as they will be need to create instances of fragments
+     * </p><p> for example
      * <pre>
      *     {@code
      *          topFragments = new android.app.Fragment[]{
@@ -65,13 +62,11 @@ public abstract class MainDrawerActivity
      *          };
      *
      *      }
-     * </pre>
+     * </pre></p>
      */
 
     public void prepareTopFragments(){
         /**
-         * Prepare any data objects like Contacts and EventfulEvents
-         * here as they will be need to create instances of fragments
          */
         topFragments = new Fragment[]{
                 AboutFragment.newInstance("A", "A"),
@@ -105,6 +100,13 @@ public abstract class MainDrawerActivity
 
     }
 
+    /**
+     * {@inheritDoc}
+     * We also set the title of the of activity according to selected
+     * fragment here.
+     * @param position
+     *
+     */
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
@@ -112,16 +114,7 @@ public abstract class MainDrawerActivity
         fragmentManager.beginTransaction()
                 .replace(R.id.container, topFragments[position])
                 .commit();
-    }
-
-    /**
-     * Defines what will be done when fragment is attached with this activity
-     * For eg. changing the title of the App
-     *
-     * @param number The position of the fragment (starts from 1)
-     */
-
-    public void onSectionAttached(int number) {
+        mTitle = topFragmentNames[position];
     }
 
     public void restoreActionBar() {
