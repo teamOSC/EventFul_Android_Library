@@ -16,6 +16,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:linksClickable="true"
         android:layout_below="@id/contact_listitem_name"
         android:text="email@address.com"
         android:id="@+id/contact_listitem_email"/>
