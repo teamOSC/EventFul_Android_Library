@@ -14,16 +14,7 @@ public class MainActivity extends MainDrawerActivity {
 
 
     @Override
-    public void setTopFragmentNames() {
-        topFragmentNames = new String[]{
-                "About",
-                "Contact"
-        };
-
-    }
-
-    @Override
-    public void setTopFragments() {
+    public void prepareTopFragments() {
 
         Contacts contacts = new Contacts(this);
         contacts.setContactNames(R.array.contact_names);
@@ -33,6 +24,12 @@ public class MainActivity extends MainDrawerActivity {
                 AboutFragment.newInstance("A", "A"),
                 ContactFragment.newInstance(contacts)
         };
+
+        topFragmentNames = new String[]{
+                "About",
+                "Contact"
+        };
+
 
     }
 

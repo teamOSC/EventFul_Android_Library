@@ -68,29 +68,26 @@ public abstract class MainDrawerActivity
      * </pre>
      */
 
-    public void setTopFragments(){
+    public void prepareTopFragments(){
+        /**
+         * Prepare any data objects like Contacts and EventfulEvents
+         * here as they will be need to create instances of fragments
+         */
         topFragments = new Fragment[]{
                 AboutFragment.newInstance("A", "A"),
                 ReachUsFragment.newInstance("b", "b")
         };
-    }
-
-    public void setTopFragmentNames(){
         topFragmentNames = new String[]{
                 "About",
                 "Reach Us"
         };
-    }
-
-    public MainDrawerActivity() {
 
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTopFragmentNames();
-        setTopFragments();
+        prepareTopFragments();
         NavigationDrawerFragment.topNavNames = topFragmentNames;
         setContentView(R.layout.activity_main_drawer);
         if (topFragments.length != topFragmentNames.length) {
