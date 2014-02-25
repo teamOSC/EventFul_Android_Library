@@ -68,28 +68,31 @@ public abstract class MainDrawerActivity
      * </pre>
      */
 
-    public abstract void setTopFragments();
-
-    public abstract void setTopFragmentNames();
-
-    public MainDrawerActivity() {
+    public void setTopFragments(){
         topFragments = new Fragment[]{
                 AboutFragment.newInstance("A", "A"),
                 ReachUsFragment.newInstance("b", "b")
         };
+    }
+
+    public void setTopFragmentNames(){
         topFragmentNames = new String[]{
                 "About",
                 "Reach Us"
         };
-        setTopFragmentNames();
+    }
+
+    public MainDrawerActivity() {
 
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_drawer);
+        setTopFragmentNames();
         setTopFragments();
+        NavigationDrawerFragment.topNavNames = topFragmentNames;
+        setContentView(R.layout.activity_main_drawer);
         if (topFragments.length != topFragmentNames.length) {
             Log.wtf(TAG, "Number of fragments and number of Fragment Names must be same !!!");
         }
