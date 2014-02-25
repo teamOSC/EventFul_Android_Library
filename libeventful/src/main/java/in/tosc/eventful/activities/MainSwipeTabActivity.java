@@ -10,13 +10,14 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
+import in.tosc.eventful.EventfulActivity;
 import in.tosc.eventful.R;
 import in.tosc.eventful.fragments.AboutFragment;
 import in.tosc.eventful.fragments.reachus.ReachUsFragment;
 
 import java.util.Locale;
 
-public class MainSwipeTabActivity extends FragmentActivity implements ActionBar.TabListener {
+public class MainSwipeTabActivity extends EventfulActivity implements ActionBar.TabListener {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -33,58 +34,9 @@ public class MainSwipeTabActivity extends FragmentActivity implements ActionBar.
      */
     ViewPager mViewPager;
 
-    /**
-     * Array of fragments to store the top level fragments
-     */
-
-    public static Fragment[] topFragments;
-
-    /**
-     * String array of names to assign to the top fragments
-     */
-
-    public static String[] topFragmentNames;
-
-    /**
-     * populate {@link #topFragments} with fragments of your choice
-     * <p>
-     * Prepare any data objects like Contacts and EventfulEvents
-     * here as they will be need to create instances of fragments
-     * </p><p> for example
-     * <pre>
-     *     {@code
-     *          topFragments = new android.app.Fragment[]{
-     *              AboutFragment.newInstance("A", "A"),
-     *              ContactFragment.newInstance("a", "a")
-     *          };
-     *          topFragmentNames = new String[] {
-     *              "About",
-     *              "Contact"
-     *          };
-     *
-     *      }
-     * </pre></p>
-     */
-
-    public void prepareTopFragments() {
-        /**
-         */
-        topFragments = new Fragment[]{
-                AboutFragment.newInstance("A", "A"),
-                ReachUsFragment.newInstance("b", "b")
-        };
-        topFragmentNames = new String[]{
-                "About",
-                "Reach Us"
-        };
-
-    }
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        prepareTopFragments();
         setContentView(R.layout.activity_main_swipe_tab);
 
         // Set up the action bar.

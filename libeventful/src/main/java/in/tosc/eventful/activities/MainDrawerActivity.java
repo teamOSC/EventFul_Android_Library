@@ -9,12 +9,13 @@ import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import in.tosc.eventful.EventfulActivity;
 import in.tosc.eventful.R;
 import in.tosc.eventful.fragments.AboutFragment;
 import in.tosc.eventful.fragments.reachus.ReachUsFragment;
 
 public abstract class MainDrawerActivity
-        extends FragmentActivity
+        extends EventfulActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
     private static String TAG = "MainDrawerActivity";
@@ -29,57 +30,10 @@ public abstract class MainDrawerActivity
      */
     private CharSequence mTitle;
 
-    /**
-     * Array of fragments to store the top level fragments
-     */
-
-    public static Fragment[] topFragments;
-
-    /**
-     * String array of names to assign to the top fragments
-     */
-
-    public static String[] topFragmentNames;
-
-    /**
-     * populate {@link #topFragments} with fragments of your choice
-     * <p>
-     * Prepare any data objects like Contacts and EventfulEvents
-     * here as they will be need to create instances of fragments
-     * </p><p> for example
-     * <pre>
-     *     {@code
-     *          topFragments = new android.app.Fragment[]{
-     *              AboutFragment.newInstance("A", "A"),
-     *              ContactFragment.newInstance("a", "a")
-     *          };
-     *          topFragmentNames = new String[] {
-     *              "About",
-     *              "Contact"
-     *          };
-     *
-     *      }
-     * </pre></p>
-     */
-
-    public void prepareTopFragments() {
-        /**
-         */
-        topFragments = new Fragment[]{
-                AboutFragment.newInstance("A", "A"),
-                ReachUsFragment.newInstance("b", "b")
-        };
-        topFragmentNames = new String[]{
-                "About",
-                "Reach Us"
-        };
-
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        prepareTopFragments();
         NavigationDrawerFragment.topNavNames = topFragmentNames;
         setContentView(R.layout.activity_main_drawer);
         if (topFragments.length != topFragmentNames.length) {
