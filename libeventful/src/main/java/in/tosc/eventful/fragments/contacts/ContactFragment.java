@@ -6,8 +6,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 
+import android.widget.TextView;
 import com.haarman.listviewanimations.swinginadapters.AnimationAdapter;
 import com.haarman.listviewanimations.swinginadapters.prepared.SwingRightInAnimationAdapter;
 
@@ -69,23 +72,47 @@ public class ContactFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         //Log.d(TAG, "onCreateView called");
 
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_contact, container, false);
-        List<String> contactList = new ArrayList<String>();
-        //TODO: Get these from the xml files
-        for (String mContactItem : contactNames) {
-            //Log.d(TAG, mContactItem);
-            contactList.add(mContactItem);
-        }
-        GoogleCardsAdapter mAdapter = new GoogleCardsAdapter(getActivity().getApplicationContext(), contactList);
-        ListView contactsListView = (ListView) rootView.findViewById(R.id.list_contacts);
-        AnimationAdapter animAdapter = new SwingRightInAnimationAdapter(mAdapter);
-        animAdapter.setAbsListView(contactsListView);
-        contactsListView.setAdapter(animAdapter);
+        final View rootView = inflater.inflate(R.layout.fragment_contact, container, false);
+        ListView contactList = (ListView) rootView.findViewById(R.id.list_contacts);
+        ListAdapter contactAdapter = new BaseAdapter() {
+            @Override
+            public int getCount() {
+                return contactNames.length;
+            }
+
+            @Override
+            public Object getItem(int i) {
+                return i;
+            }
+
+            @Override
+            public long getItemId(int i) {
+                return i;
+            }
+
+            @Override
+            public View getView(int i, View view, ViewGroup viewGroup) {
+                View vi = view;
+                if (vi == null) {
+                    vi = inflater.inflate(R.layout.contact_listitem, null);
+                    TextView contactName = (TextView) vi.findViewById(R.id.contact_listitem_name);
+                    TextView contactEmail = (TextView) vi.findViewById(R.id.contact_listitem_email);
+
+                    contactName.setText(contactNames[i]);
+                    contactEmail.setText(contactEmails[i]);
+
+
+                }
+                return vi;
+
+            }
+        };
+        contactList.setAdapter(contactAdapter);
         return rootView;
     }
 
