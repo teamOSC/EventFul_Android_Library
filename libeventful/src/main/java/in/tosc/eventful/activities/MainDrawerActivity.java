@@ -1,23 +1,20 @@
 package in.tosc.eventful.activities;
 
 import android.app.ActionBar;
-import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import java.util.Map;
-
 import in.tosc.eventful.R;
 import in.tosc.eventful.fragments.AboutFragment;
 import in.tosc.eventful.fragments.reachus.ReachUsFragment;
 
 public abstract class MainDrawerActivity
-        extends Activity
+        extends FragmentActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
     private static String TAG = "MainDrawerActivity";
@@ -90,7 +87,7 @@ public abstract class MainDrawerActivity
         }
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
-                getFragmentManager().findFragmentById(R.id.navigation_drawer);
+                getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
         mTitle = getTitle();
 
         // Set up the drawer.
@@ -110,7 +107,7 @@ public abstract class MainDrawerActivity
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
-        FragmentManager fragmentManager = getFragmentManager();
+        FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
                 .replace(R.id.container, topFragments[position])
                 .commit();

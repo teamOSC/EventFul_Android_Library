@@ -1,6 +1,6 @@
 package in.tosc.eventful.sampleapp;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 
 import in.tosc.eventful.activities.MainDrawerActivity;
 import in.tosc.eventful.data.Contacts;
