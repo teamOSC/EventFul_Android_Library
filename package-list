@@ -1,6 +1,9 @@
-in.tosc.eventful
+com.astuetz
 in.tosc.eventful.activities
+in.tosc.eventful.data
 in.tosc.eventful.fragments
+in.tosc.eventful.fragments.contacts
 in.tosc.eventful.fragments.events
 in.tosc.eventful.fragments.reachus
 in.tosc.eventful.fragments.register
+in.tosc.eventful.utils
