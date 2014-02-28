@@ -2,7 +2,6 @@ package in.tosc.eventful.sampleapp;
 
 import android.support.v4.app.Fragment;
 import in.tosc.eventful.activities.MainDrawerActivity;
-import in.tosc.eventful.activities.MainSwipeTabActivity;
 import in.tosc.eventful.data.Contacts;
 import in.tosc.eventful.fragments.AboutFragment;
 import in.tosc.eventful.fragments.contacts.ContactFragment;

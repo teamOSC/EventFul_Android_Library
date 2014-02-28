@@ -4,7 +4,6 @@ import android.app.ActionBar;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -12,8 +11,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import in.tosc.eventful.EventfulActivity;
 import in.tosc.eventful.R;
-import in.tosc.eventful.fragments.AboutFragment;
-import in.tosc.eventful.fragments.reachus.ReachUsFragment;
 
 import java.util.Locale;
 
