@@ -1,0 +1,1928 @@
+<api>
+<package name="com.astuetz"
+>
+<class name="PagerSlidingTabStrip"
+ extends="HorizontalScrollView"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="PagerSlidingTabStrip"
+ type="com.astuetz.PagerSlidingTabStrip"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="Context">
+</parameter>
+</constructor>
+<constructor name="PagerSlidingTabStrip"
+ type="com.astuetz.PagerSlidingTabStrip"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="Context">
+</parameter>
+<parameter name="attrs" type="AttributeSet">
+</parameter>
+</constructor>
+<constructor name="PagerSlidingTabStrip"
+ type="com.astuetz.PagerSlidingTabStrip"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="Context">
+</parameter>
+<parameter name="attrs" type="AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
+</parameter>
+</constructor>
+<method name="getDividerColor"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDividerPadding"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getIndicatorColor"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getIndicatorHeight"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getScrollOffset"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getShouldExpand"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTabBackground"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTabPaddingLeftRight"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTextColor"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTextSize"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getUnderlineColor"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getUnderlineHeight"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isTextAllCaps"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="notifyDataSetChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onDraw"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="canvas" type="Canvas">
+</parameter>
+</method>
+<method name="onRestoreInstanceState"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="state" type="Parcelable">
+</parameter>
+</method>
+<method name="onSaveInstanceState"
+ return="Parcelable"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setAllCaps"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="textAllCaps" type="boolean">
+</parameter>
+</method>
+<method name="setDividerColor"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="dividerColor" type="int">
+</parameter>
+</method>
+<method name="setDividerColorResource"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="resId" type="int">
+</parameter>
+</method>
+<method name="setDividerPadding"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="dividerPaddingPx" type="int">
+</parameter>
+</method>
+<method name="setIndicatorColor"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="indicatorColor" type="int">
+</parameter>
+</method>
+<method name="setIndicatorColorResource"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="resId" type="int">
+</parameter>
+</method>
+<method name="setIndicatorHeight"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="indicatorLineHeightPx" type="int">
+</parameter>
+</method>
+<method name="setOnPageChangeListener"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="listener" type="OnPageChangeListener">
+</parameter>
+</method>
+<method name="setScrollOffset"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="scrollOffsetPx" type="int">
+</parameter>
+</method>
+<method name="setShouldExpand"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="shouldExpand" type="boolean">
+</parameter>
+</method>
+<method name="setTabBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="resId" type="int">
+</parameter>
+</method>
+<method name="setTabPaddingLeftRight"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="paddingPx" type="int">
+</parameter>
+</method>
+<method name="setTextColor"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="textColor" type="int">
+</parameter>
+</method>
+<method name="setTextColorResource"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="resId" type="int">
+</parameter>
+</method>
+<method name="setTextSize"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="textSizePx" type="int">
+</parameter>
+</method>
+<method name="setTypeface"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="typeface" type="Typeface">
+</parameter>
+<parameter name="style" type="int">
+</parameter>
+</method>
+<method name="setUnderlineColor"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="underlineColor" type="int">
+</parameter>
+</method>
+<method name="setUnderlineColorResource"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="resId" type="int">
+</parameter>
+</method>
+<method name="setUnderlineHeight"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="underlineHeightPx" type="int">
+</parameter>
+</method>
+<method name="setViewPager"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pager" type="ViewPager">
+</parameter>
+</method>
+<field name="delegatePageListener"
+ type="OnPageChangeListener"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<interface name="PagerSlidingTabStrip.IconTabProvider"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getPageIconResId"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="int">
+</parameter>
+</method>
+</interface>
+</package>
+<package name="in.tosc.eventful"
+>
+<class name="EventfulActivity"
+ extends="FragmentActivity"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="EventfulActivity"
+ type="in.tosc.eventful.EventfulActivity"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="onCreate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+<method name="onCreateOptionsMenu"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="menu" type="Menu">
+</parameter>
+</method>
+<method name="onOptionsItemSelected"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="item" type="MenuItem">
+</parameter>
+</method>
+<method name="prepareTopFragments"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="topFragmentNames"
+ type="java.lang.String[]"
+ transient="false"
+ volatile="false"
+ value="null"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="topFragments"
+ type="Fragment[]"
+ transient="false"
+ volatile="false"
+ value="null"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+</package>
+<package name="in.tosc.eventful.activities"
+>
+<class name="MainDrawerActivity"
+ extends="in.tosc.eventful.EventfulActivity"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="in.tosc.eventful.activities.NavigationDrawerFragment.NavigationDrawerCallbacks">
+</implements>
+<constructor name="MainDrawerActivity"
+ type="in.tosc.eventful.activities.MainDrawerActivity"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="onNavigationDrawerItemSelected"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="int">
+</parameter>
+</method>
+<method name="restoreActionBar"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="MainSwipeTabActivity"
+ extends="in.tosc.eventful.EventfulActivity"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="MainSwipeTabActivity"
+ type="in.tosc.eventful.activities.MainSwipeTabActivity"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="onTabReselected"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tab" type="ActionBar.Tab">
+</parameter>
+<parameter name="fragmentTransaction" type="FragmentTransaction">
+</parameter>
+</method>
+<method name="onTabSelected"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tab" type="ActionBar.Tab">
+</parameter>
+<parameter name="fragmentTransaction" type="FragmentTransaction">
+</parameter>
+</method>
+<method name="onTabUnselected"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tab" type="ActionBar.Tab">
+</parameter>
+<parameter name="fragmentTransaction" type="FragmentTransaction">
+</parameter>
+</method>
+</class>
+<class name="MainSwipeTabActivity.SectionsPagerAdapter"
+ extends="FragmentPagerAdapter"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="MainSwipeTabActivity.SectionsPagerAdapter"
+ type="in.tosc.eventful.activities.MainSwipeTabActivity.SectionsPagerAdapter"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="fm" type="FragmentManager">
+</parameter>
+</constructor>
+<method name="getCount"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getItem"
+ return="Fragment"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="int">
+</parameter>
+</method>
+<method name="getPageTitle"
+ return="java.lang.CharSequence"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="int">
+</parameter>
+</method>
+</class>
+<class name="NavigationDrawerFragment"
+ extends="Fragment"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NavigationDrawerFragment"
+ type="in.tosc.eventful.activities.NavigationDrawerFragment"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="isDrawerOpen"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onActivityCreated"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+<method name="onAttach"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="Activity">
+</parameter>
+</method>
+<method name="onConfigurationChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="newConfig" type="Configuration">
+</parameter>
+</method>
+<method name="onCreate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+<method name="onCreateOptionsMenu"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="menu" type="Menu">
+</parameter>
+<parameter name="inflater" type="MenuInflater">
+</parameter>
+</method>
+<method name="onCreateView"
+ return="View"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="inflater" type="LayoutInflater">
+</parameter>
+<parameter name="container" type="ViewGroup">
+</parameter>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+<method name="onDetach"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onOptionsItemSelected"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="item" type="MenuItem">
+</parameter>
+</method>
+<method name="onSaveInstanceState"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="outState" type="Bundle">
+</parameter>
+</method>
+<method name="setUp"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="fragmentId" type="int">
+</parameter>
+<parameter name="drawerLayout" type="DrawerLayout">
+</parameter>
+</method>
+<field name="topNavNames"
+ type="java.lang.String[]"
+ transient="false"
+ volatile="false"
+ value="null"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<interface name="NavigationDrawerFragment.NavigationDrawerCallbacks"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onNavigationDrawerItemSelected"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="int">
+</parameter>
+</method>
+</interface>
+</package>
+<package name="in.tosc.eventful.data"
+>
+<class name="Contacts"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="Contacts"
+ type="in.tosc.eventful.data.Contacts"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="Context">
+</parameter>
+</constructor>
+<method name="getContactEmails"
+ return="java.lang.String[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getContactNames"
+ return="java.lang.String[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setContactEmails"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="resId" type="int">
+</parameter>
+</method>
+<method name="setContactNames"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="resId" type="int">
+</parameter>
+</method>
+</class>
+<class name="EventfulEvent"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="EventfulEvent"
+ type="in.tosc.eventful.data.EventfulEvent"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="Context">
+</parameter>
+</constructor>
+<method name="getEventContacts"
+ return="java.lang.String[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEventDates"
+ return="java.lang.String[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEventDescs"
+ return="java.lang.String[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEventEndTimes"
+ return="java.lang.String[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEventNames"
+ return="java.lang.String[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEventStartTimes"
+ return="java.lang.String[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setEventContacts"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="resId" type="int">
+</parameter>
+</method>
+<method name="setEventDates"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="resId" type="int">
+</parameter>
+</method>
+<method name="setEventDescs"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="resId" type="int">
+</parameter>
+</method>
+<method name="setEventEndTimes"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="resId" type="int">
+</parameter>
+</method>
+<method name="setEventNames"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="resId" type="int">
+</parameter>
+</method>
+<method name="setEventStartTimes"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="resId" type="int">
+</parameter>
+</method>
+</class>
+</package>
+<package name="in.tosc.eventful.fragments"
+>
+<class name="AboutFragment"
+ extends="Fragment"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="AboutFragment"
+ type="in.tosc.eventful.fragments.AboutFragment"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="newInstance"
+ return="in.tosc.eventful.fragments.AboutFragment"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="param1" type="java.lang.String">
+</parameter>
+<parameter name="param2" type="java.lang.String">
+</parameter>
+</method>
+<method name="onCreate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+<method name="onCreateView"
+ return="View"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="inflater" type="LayoutInflater">
+</parameter>
+<parameter name="container" type="ViewGroup">
+</parameter>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+</class>
+</package>
+<package name="in.tosc.eventful.fragments.contacts"
+>
+<class name="ContactFragment"
+ extends="Fragment"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ContactFragment"
+ type="in.tosc.eventful.fragments.contacts.ContactFragment"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="newInstance"
+ return="in.tosc.eventful.fragments.contacts.ContactFragment"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="contacts" type="in.tosc.eventful.data.Contacts">
+</parameter>
+</method>
+<method name="onCreate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+<method name="onCreateView"
+ return="View"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="inflater" type="LayoutInflater">
+</parameter>
+<parameter name="container" type="ViewGroup">
+</parameter>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+</class>
+<class name="ContactGoogleCardFragment"
+ extends="Fragment"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ContactGoogleCardFragment"
+ type="in.tosc.eventful.fragments.contacts.ContactGoogleCardFragment"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="newInstance"
+ return="in.tosc.eventful.fragments.contacts.ContactGoogleCardFragment"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="contacts" type="in.tosc.eventful.data.Contacts">
+</parameter>
+</method>
+<method name="onCreate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+<method name="onCreateView"
+ return="View"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="inflater" type="LayoutInflater">
+</parameter>
+<parameter name="container" type="ViewGroup">
+</parameter>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+</class>
+</package>
+<package name="in.tosc.eventful.fragments.events"
+>
+<class name="EventDaySliderFragment"
+ extends="Fragment"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="EventDaySliderFragment"
+ type="in.tosc.eventful.fragments.events.EventDaySliderFragment"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="newInstance"
+ return="in.tosc.eventful.fragments.events.EventDaySliderFragment"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="param1" type="java.lang.String">
+</parameter>
+<parameter name="param2" type="java.lang.String">
+</parameter>
+</method>
+<method name="onCreate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+<method name="onCreateView"
+ return="View"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="inflater" type="LayoutInflater">
+</parameter>
+<parameter name="container" type="ViewGroup">
+</parameter>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+</class>
+<class name="EventItemSliderFragment"
+ extends="Fragment"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="EventItemSliderFragment"
+ type="in.tosc.eventful.fragments.events.EventItemSliderFragment"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="newInstance"
+ return="in.tosc.eventful.fragments.events.EventItemSliderFragment"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="param1" type="java.lang.String">
+</parameter>
+<parameter name="param2" type="java.lang.String">
+</parameter>
+</method>
+<method name="onCreate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+<method name="onCreateView"
+ return="View"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="inflater" type="LayoutInflater">
+</parameter>
+<parameter name="container" type="ViewGroup">
+</parameter>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+</class>
+<class name="EventSingleItemFragment"
+ extends="Fragment"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="EventSingleItemFragment"
+ type="in.tosc.eventful.fragments.events.EventSingleItemFragment"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="newInstance"
+ return="in.tosc.eventful.fragments.events.EventSingleItemFragment"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="param1" type="java.lang.String">
+</parameter>
+<parameter name="param2" type="java.lang.String">
+</parameter>
+</method>
+<method name="onCreate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+<method name="onCreateView"
+ return="View"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="inflater" type="LayoutInflater">
+</parameter>
+<parameter name="container" type="ViewGroup">
+</parameter>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+</class>
+</package>
+<package name="in.tosc.eventful.fragments.reachus"
+>
+<class name="ReachUsFragment"
+ extends="Fragment"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ReachUsFragment"
+ type="in.tosc.eventful.fragments.reachus.ReachUsFragment"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="newInstance"
+ return="in.tosc.eventful.fragments.reachus.ReachUsFragment"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rlat" type="java.lang.String">
+</parameter>
+<parameter name="rlong" type="java.lang.String">
+</parameter>
+</method>
+<method name="onCreate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+<method name="onCreateView"
+ return="View"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="inflater" type="LayoutInflater">
+</parameter>
+<parameter name="container" type="ViewGroup">
+</parameter>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+</class>
+<class name="ReachUsStaticFragment"
+ extends="Fragment"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="ReachUsStaticFragment"
+ type="in.tosc.eventful.fragments.reachus.ReachUsStaticFragment"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="newInstance"
+ return="in.tosc.eventful.fragments.reachus.ReachUsStaticFragment"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="param1" type="java.lang.String">
+</parameter>
+<parameter name="param2" type="java.lang.String">
+</parameter>
+</method>
+<method name="onCreate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+<method name="onCreateView"
+ return="View"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="inflater" type="LayoutInflater">
+</parameter>
+<parameter name="container" type="ViewGroup">
+</parameter>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+</class>
+</package>
+<package name="in.tosc.eventful.fragments.register"
+>
+<class name="RegisterInAppFragment"
+ extends="Fragment"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="RegisterInAppFragment"
+ type="in.tosc.eventful.fragments.register.RegisterInAppFragment"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="newInstance"
+ return="in.tosc.eventful.fragments.register.RegisterInAppFragment"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="param1" type="java.lang.String">
+</parameter>
+<parameter name="param2" type="java.lang.String">
+</parameter>
+</method>
+<method name="onCreate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+<method name="onCreateView"
+ return="View"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="inflater" type="LayoutInflater">
+</parameter>
+<parameter name="container" type="ViewGroup">
+</parameter>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+</class>
+<class name="RegisterWebViewFragment"
+ extends="WebViewFragment"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="RegisterWebViewFragment"
+ type="in.tosc.eventful.fragments.register.RegisterWebViewFragment"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="newInstance"
+ return="in.tosc.eventful.fragments.register.RegisterWebViewFragment"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="param1" type="java.lang.String">
+</parameter>
+<parameter name="param2" type="java.lang.String">
+</parameter>
+</method>
+<method name="onCreate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+<method name="onCreateView"
+ return="View"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="inflater" type="LayoutInflater">
+</parameter>
+<parameter name="container" type="ViewGroup">
+</parameter>
+<parameter name="savedInstanceState" type="Bundle">
+</parameter>
+</method>
+</class>
+</package>
+<package name="in.tosc.eventful.utils"
+>
+<class name="GoogleCardsAdapter"
+ extends="BaseAdapter"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="GoogleCardsAdapter"
+ type="in.tosc.eventful.utils.GoogleCardsAdapter"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="Context">
+</parameter>
+<parameter name="mList" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+</constructor>
+<method name="getCount"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getItem"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method name="getItemId"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method name="getView"
+ return="View"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="position" type="int">
+</parameter>
+<parameter name="convertView" type="View">
+</parameter>
+<parameter name="parent" type="ViewGroup">
+</parameter>
+</method>
+</class>
+</package>
+</api>
