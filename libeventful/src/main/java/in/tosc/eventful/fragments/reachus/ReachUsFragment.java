@@ -10,7 +10,6 @@ import in.tosc.eventful.R;
 
 
 /**
- * A simple {@link android.app.Fragment} subclass.
  * Use the {@link ReachUsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */

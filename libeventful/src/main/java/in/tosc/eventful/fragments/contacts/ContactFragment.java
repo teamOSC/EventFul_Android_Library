@@ -15,7 +15,6 @@ import in.tosc.eventful.data.Contacts;
 
 
 /**
- * A simple {@link android.app.Fragment} subclass.
  * Use the {@link ContactFragment#newInstance} factory method to
  * create an instance of this fragment.
  */

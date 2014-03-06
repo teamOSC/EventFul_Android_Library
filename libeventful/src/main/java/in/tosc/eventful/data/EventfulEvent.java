@@ -4,6 +4,11 @@ import android.content.Context;
 
 /**
  * Created by championswimmer on 25/2/14.
+ * <p>
+ *     This class is called EventfulEvent so as to differentiate
+ *     this from the default calendar service's Event class
+ * </p>
+ *
  */
 public class EventfulEvent {
 

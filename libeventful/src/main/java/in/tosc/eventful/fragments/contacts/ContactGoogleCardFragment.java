@@ -18,7 +18,6 @@ import java.util.List;
 
 
 /**
- * A simple {@link android.app.Fragment} subclass.
  * Use the {@link in.tosc.eventful.fragments.contacts.ContactGoogleCardFragment#newInstance} factory method to
  * create an instance of this fragment.
  */

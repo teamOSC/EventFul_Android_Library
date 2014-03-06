@@ -9,7 +9,6 @@ import in.tosc.eventful.R;
 
 
 /**
- * A simple {@link android.app.Fragment} subclass.
  * Activities that contain this fragment must implement the
  * to handle interaction events.
  * Use the {@link ReachUsStaticFragment#newInstance} factory method to

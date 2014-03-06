@@ -10,7 +10,6 @@ import in.tosc.eventful.R;
 
 
 /**
- * A simple {@link android.webkit.WebViewFragment} subclass.
  * Use the {@link RegisterWebViewFragment#newInstance} factory method to
  * create an instance of this fragment.
  */

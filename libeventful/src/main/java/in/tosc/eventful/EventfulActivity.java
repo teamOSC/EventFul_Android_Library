@@ -36,7 +36,7 @@ public class EventfulActivity extends FragmentActivity {
      * </p><p> for example
      * <pre>
      *     {@code
-     *          topFragments = new android.app.Fragment[]{
+     *          topFragments = new android.support.v4.app.Fragment[]{
      *              AboutFragment.newInstance("A", "A"),
      *              ContactFragment.newInstance("a", "a")
      *          };
