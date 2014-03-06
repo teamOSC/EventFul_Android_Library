@@ -1,3 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- array of event slugs. only smallcase and underscores -->
+    <string-array name="event_names">
+        <item>event1</item>
+        <item>event_two</item>
+        <item>event_three</item>
+        <item>event_4s</item>
+    </string-array>
+    
+    <string-array name="event_titles">
+        <item>"Event 1"</item>
+        <item>"Event Two"</item>
+        <item>"Event-Three"</item>
+        <item>"Event 4's"</item>
+    </string-array>
+
+    <string-array name="event_descrptions">
+        <item>"A description about event 1. This can span over many lines"</item>
+        <item>"A description about event 2. Using escape-n is the best way to induce line breaks"</item>
+        <item>"A description about event 3"</item>
+        <item>"A description about event 3"</item>
+    </string-array>
 </resources>
