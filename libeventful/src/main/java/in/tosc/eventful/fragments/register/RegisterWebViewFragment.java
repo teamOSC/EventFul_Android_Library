@@ -1,11 +1,16 @@
 package in.tosc.eventful.fragments.register;
 
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebViewFragment;
+import android.webkit.URLUtil;
+import android.webkit.WebView;
+import com.android.webkit.WebViewFragment;
+import android.widget.Toast;
+
 import in.tosc.eventful.R;
 
 
@@ -23,6 +28,7 @@ public class RegisterWebViewFragment extends WebViewFragment {
     private String mParam1;
     private String mParam2;
 
+    private Context mContext;
 
     /**
      * Use this factory method to create a new instance of
@@ -59,8 +65,17 @@ public class RegisterWebViewFragment extends WebViewFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_register_web_view, container, false);
+        View rootView = super.onCreateView(inflater, container, savedInstanceState);
+        WebView mWebView = getWebView();
+        mWebView.getSettings().setJavaScriptEnabled(true);
+        String registerUrl = getResources().getString(R.string.register_web_view_url);
+        if (URLUtil.isValidUrl(registerUrl)) {
+            mWebView.loadUrl(registerUrl);
+        } else {
+            Toast.makeText(mContext, "Invalid Url", Toast.LENGTH_SHORT).show();
+        }
+
+
+        return rootView;
     }
-
-
 }

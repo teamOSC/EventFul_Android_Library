@@ -3,3 +3,6 @@
 *.properties
 *.iml
 documentation/
+.idea
+build
+build/

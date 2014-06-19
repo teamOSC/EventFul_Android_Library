@@ -13,4 +13,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_main_swipe_tab">MainSwipeTabActivity</string>
 
+    <!-- Registration related -->
+    <string name="register_web_view_url">http://www.google.com</string>
+    <string name="registration_title">Register for the event</string>
+
 </resources>
