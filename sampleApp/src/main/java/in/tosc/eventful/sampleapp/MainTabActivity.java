@@ -5,6 +5,7 @@ import in.tosc.eventful.activities.MainSwipeTabActivity;
 import in.tosc.eventful.data.Contacts;
 import in.tosc.eventful.fragments.AboutFragment;
 import in.tosc.eventful.fragments.contacts.ContactFragment;
+import in.tosc.eventful.fragments.events.EventDaySliderFragment;
 
 /**
  * Created by championswimmer on 18/2/14.
@@ -21,12 +22,14 @@ public class MainTabActivity extends MainSwipeTabActivity {
 
         topFragments = new Fragment[]{
                 AboutFragment.newInstance("A", "A"),
-                ContactFragment.newInstance(contacts)
+                ContactFragment.newInstance(contacts),
+                EventDaySliderFragment.newInstance("A", "A")
         };
 
         topFragmentNames = new String[]{
                 "About",
-                "Contact"
+                "Contact",
+                "Events"
         };
 
 
