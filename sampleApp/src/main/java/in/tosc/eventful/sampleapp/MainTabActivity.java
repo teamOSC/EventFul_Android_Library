@@ -26,8 +26,10 @@ public class MainTabActivity extends MainSwipeTabActivity {
         Registration registration = new Registration(this);
         registration.setInputLabels(R.array.labels);
 
+        String aboutUs = getResources().getString(R.string.about_us);
+
         topFragments = new Fragment[]{
-                AboutFragment.newInstance("A", "A"),
+                AboutFragment.newInstance(aboutUs),
                 ContactFragment.newInstance(contacts),
                 EventDaySliderFragment.newInstance("A", "A"),
                 RegisterInAppFragment.newInstance(registration)
