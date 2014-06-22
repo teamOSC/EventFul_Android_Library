@@ -51,7 +51,7 @@ public class EventfulActivity extends FragmentActivity {
 
     public void prepareTopFragments() {
         topFragments = new Fragment[]{
-                AboutFragment.newInstance("A", "A"),
+                AboutFragment.newInstance("Too lazy to add it in xml"),
                 ReachUsFragment.newInstance("b", "b")
         };
         topFragmentNames = new String[]{
