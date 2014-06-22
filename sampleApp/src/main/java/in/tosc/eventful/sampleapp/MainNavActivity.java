@@ -1,12 +1,16 @@
 package in.tosc.eventful.sampleapp;
 
 import android.support.v4.app.Fragment;
+
+import in.tosc.eventful.EventfulActivity;
 import in.tosc.eventful.activities.MainDrawerActivity;
 import in.tosc.eventful.data.Contacts;
+import in.tosc.eventful.data.EventfulEvent;
 import in.tosc.eventful.data.Registration;
 import in.tosc.eventful.fragments.AboutFragment;
 import in.tosc.eventful.fragments.contacts.ContactFragment;
 import in.tosc.eventful.fragments.events.EventDaySliderFragment;
+import in.tosc.eventful.fragments.events.EventItemSliderFragment;
 import in.tosc.eventful.fragments.register.RegisterInAppFragment;
 
 /**
@@ -27,10 +31,14 @@ public class MainNavActivity extends MainDrawerActivity {
 
         String aboutUs = getResources().getString(R.string.about_us);
 
+        EventfulEvent events = new EventfulEvent(this);
+        events.setEventNames(R.array.event_titles);
+        events.setEventDesc(R.array.event_descrptions);
+
         topFragments = new Fragment[]{
                 AboutFragment.newInstance(aboutUs),
                 ContactFragment.newInstance(contacts),
-                EventDaySliderFragment.newInstance("A", "A"),
+                EventItemSliderFragment.newInstance(events),
                 RegisterInAppFragment.newInstance(registration)
         };
 
