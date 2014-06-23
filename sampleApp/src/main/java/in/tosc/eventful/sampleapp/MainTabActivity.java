@@ -8,7 +8,6 @@ import in.tosc.eventful.fragments.AboutFragment;
 import in.tosc.eventful.fragments.contacts.ContactFragment;
 import in.tosc.eventful.fragments.events.EventDaySliderFragment;
 import in.tosc.eventful.fragments.register.RegisterInAppFragment;
-import in.tosc.eventful.fragments.register.RegisterWebViewFragment;
 
 /**
  * Created by championswimmer on 18/2/14.

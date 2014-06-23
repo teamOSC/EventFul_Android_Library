@@ -9,6 +9,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.koushikdutta.ion.Ion;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+
 import in.tosc.eventful.R;
 
 /**
@@ -33,8 +38,14 @@ public class EventFragment extends Fragment{
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_event, container, false);
         ImageView eventImageView = (ImageView) rootView.findViewById(R.id.event_image);
+        try {
+            Ion.with(eventImageView)
+                    .load("http://placehold.it/850x450&text=" +
+                            URLEncoder.encode(this.eventName, "UTF-8"));
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
         TextView eventDescTextView = (TextView) rootView.findViewById(R.id.event_desc);
-        eventImageView.setBackgroundResource(R.drawable.ic_launcher);
         eventDescTextView.setText(eventDesc);
         return rootView;
     }

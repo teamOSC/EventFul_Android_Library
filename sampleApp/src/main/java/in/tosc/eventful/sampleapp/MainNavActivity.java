@@ -9,7 +9,6 @@ import in.tosc.eventful.data.EventfulEvent;
 import in.tosc.eventful.data.Registration;
 import in.tosc.eventful.fragments.AboutFragment;
 import in.tosc.eventful.fragments.contacts.ContactFragment;
-import in.tosc.eventful.fragments.events.EventDaySliderFragment;
 import in.tosc.eventful.fragments.events.EventItemSliderFragment;
 import in.tosc.eventful.fragments.register.RegisterInAppFragment;
 
