@@ -17,6 +17,11 @@ import in.tosc.eventful.utils.EventFulFragment;
  */
 public class MainTabActivity extends MainSwipeTabActivity {
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        finish();
+    }
 
     @Override
     public void prepareTopFragments() {
