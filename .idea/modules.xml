@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EventFul_Android_App.iml" filepath="$PROJECT_DIR$/EventFul_Android_App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libeventful/libeventful.iml" filepath="$PROJECT_DIR$/libeventful/libeventful.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sampleApp/sampleApp.iml" filepath="$PROJECT_DIR$/sampleApp/sampleApp.iml" />
+    </modules>
+  </component>
+</project>
+

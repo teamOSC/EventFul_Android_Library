@@ -6,8 +6,16 @@ import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+
 import in.tosc.eventful.fragments.AboutFragment;
 import in.tosc.eventful.fragments.reachus.ReachUsFragment;
+import in.tosc.eventful.utils.EventFulFragment;
 
 /**
  * Created by championswimmer on 25/2/14.
@@ -16,17 +24,12 @@ public class EventfulActivity extends FragmentActivity {
 
     private static String TAG = "EventfulActivity";
     private static Boolean USE_DEFAULT_FRAGMENTS = true;
-    /**
-     * Array of fragments to store the top level fragments
-     */
-
-    public static Fragment[] topFragments;
 
     /**
-     * String array of names to assign to the top fragments
+     * Array of fragments to store the top level fragments (Name, Fragment) pairs
      */
 
-    public static String[] topFragmentNames;
+    public static ArrayList<EventFulFragment> topFragments;
 
     /**
      * populate {@link #topFragments} with fragments of your choice
@@ -50,23 +53,24 @@ public class EventfulActivity extends FragmentActivity {
      */
 
     public void prepareTopFragments() {
-        topFragments = new Fragment[]{
-                AboutFragment.newInstance("A", "A"),
-                ReachUsFragment.newInstance("b", "b")
-        };
-        topFragmentNames = new String[]{
+        topFragments.add(new EventFulFragment(
                 "About",
-                "Reach Us"
-        };
+                (AboutFragment.newInstance("Too lazy to add it in xml"))
+        ));
+        topFragments.add(new EventFulFragment(
+                "Reach Us",
+                (ReachUsFragment.newInstance("b", "b"))
+        ));
+
+
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        topFragments = new ArrayList<EventFulFragment>();
         prepareTopFragments();
-        if (topFragments.length != topFragmentNames.length) {
-            Log.wtf(TAG, "Number of fragments and number of Fragment Names must be same !!!");
-        }
+
     }
 
     @Override

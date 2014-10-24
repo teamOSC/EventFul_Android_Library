@@ -15,7 +15,7 @@ public class EventfulEvent {
     private Context c;
 
     private String[] eventNames = {""};
-    private String[] eventDescs = {""};
+    private String[] eventDesc = {""};
     private String[] eventDates = {""};
     private String[] eventStartTimes = {""};
     private String[] eventEndTimes = {""};
@@ -29,8 +29,8 @@ public class EventfulEvent {
         eventNames = c.getResources().getStringArray(resId);
     }
 
-    public void setEventDescs(int resId) {
-        eventDescs = c.getResources().getStringArray(resId);
+    public void setEventDesc(int resId) {
+        eventDesc = c.getResources().getStringArray(resId);
     }
 
     public void setEventDates(int resId) {
@@ -53,8 +53,8 @@ public class EventfulEvent {
         return eventNames;
     }
 
-    public String[] getEventDescs() {
-        return eventDescs;
+    public String[] getEventDesc() {
+        return eventDesc;
     }
 
     public String[] getEventDates() {

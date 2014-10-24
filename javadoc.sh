@@ -16,10 +16,11 @@ EXTRA2=""
 #customs (only uncomment one doclet)
 
 ### doclet: doclava ###
-DOCLETPATH="-docletpath $HERE/javadoc/doclava.jar"
-DOCLET="-doclet com.google.doclava.Doclava"
-EXTRA1="-hdf project.name \"Eventful\" "
-EXTRA2="-XDignore.symbol.file"
+#DOCLETPATH="-docletpath $HERE/javadoc/doclava.jar"
+#DOCLET="-doclet com.google.doclava.Doclava"
+#EXTRA1="-hdf project.name \"Eventful\" "
+#EXTRA2="-XDignore.symbol.file"
+
 ### doclet: apiviz ###
 #STYLESHEET="-stylesheetfile $HERE/javadoc/stylesheet.css"
 #DOCLETPATH="-docletpath $HERE/javadoc/apiviz.jar"
@@ -34,6 +35,8 @@ echo "STYLESHEET $STYLESHEET"
 echo "OUTDIR $OUTDIR"
 echo "EXTRA1 $EXTRA1"
 read -p "Enter to continue"
+
+cd $HERE
 
 
 ### module:libeventful ###

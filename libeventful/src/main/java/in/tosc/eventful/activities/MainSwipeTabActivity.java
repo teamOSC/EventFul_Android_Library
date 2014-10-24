@@ -29,10 +29,22 @@ public class MainSwipeTabActivity extends EventfulActivity implements ActionBar.
      */
     ViewPager mViewPager;
 
+    private String[] topFragNames;
+
+    private Fragment[] topFrags;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_swipe_tab);
+
+        topFragNames = new String[topFragments.size()];
+        topFrags = new Fragment[topFragments.size()];
+        for (int i = 0; i < topFragments.size(); i++) {
+            topFragNames[i] = topFragments.get(i).getmTitle();
+            topFrags[i] = topFragments.get(i).getmFragment();
+        }
 
         // Set up the action bar.
         final ActionBar actionBar = getActionBar();
@@ -99,19 +111,19 @@ public class MainSwipeTabActivity extends EventfulActivity implements ActionBar.
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return topFragments[position];
+            return topFrags[position];
         }
 
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return topFragments.length;
+            return topFrags.length;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
             Locale l = Locale.getDefault();
-            return topFragmentNames[position];
+            return topFragNames[position];
         }
     }
 

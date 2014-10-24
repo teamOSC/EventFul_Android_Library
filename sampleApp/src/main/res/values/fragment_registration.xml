@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="labels">
+        <item>Name</item>
+        <item>Age</item>
+        <item>Sex</item>
+        <item>About me</item>
+    </string-array>
+</resources>
