@@ -1,1 +1,1 @@
-include ':libeventful', ':sampleApp'
+include ':sampleApp', ':libeventful'
