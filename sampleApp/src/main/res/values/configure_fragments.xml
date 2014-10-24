@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="enable_aboutus">true</bool>
+    <bool name="enable_contactus">true</bool>
+    <bool name="enable_events">true</bool>
+    <bool name="enable_registration">true</bool>
+
+</resources>
