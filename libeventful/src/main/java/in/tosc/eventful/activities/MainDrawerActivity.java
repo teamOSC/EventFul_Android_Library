@@ -2,6 +2,7 @@ package in.tosc.eventful.activities;
 
 import android.app.ActionBar;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
@@ -26,11 +27,22 @@ public abstract class MainDrawerActivity
      */
     private CharSequence mTitle;
 
+    private String[] topFragNames;
+
+    private Fragment[] topFrags;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        NavigationDrawerFragment.topNavNames = topFragmentNames;
+        topFragNames = new String[topFragments.size()];
+        topFrags = new Fragment[topFragments.size()];
+        for (int i = 0; i < topFragments.size(); i++) {
+            topFragNames[i] = topFragments.get(i).getmTitle();
+            topFrags[i] = topFragments.get(i).getmFragment();
+        }
+        NavigationDrawerFragment.topNavNames = topFragNames;
         setContentView(R.layout.activity_main_drawer);
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
@@ -56,9 +68,9 @@ public abstract class MainDrawerActivity
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.container, topFragments[position])
+                .replace(R.id.container, topFrags[position])
                 .commit();
-        mTitle = topFragmentNames[position];
+        mTitle = topFragNames[position];
     }
 
     public void restoreActionBar() {
