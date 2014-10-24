@@ -18,7 +18,8 @@ import in.tosc.eventful.fragments.reachus.ReachUsFragment;
 import in.tosc.eventful.utils.EventFulFragment;
 
 /**
- * Created by championswimmer on 25/2/14.
+ * @author championswimmer
+ * created on 25/2/14
  */
 public class EventfulActivity extends FragmentActivity {
 

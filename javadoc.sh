@@ -40,7 +40,7 @@ cd $HERE
 
 
 ### module:libeventful ###
-javadoc $(find libeventful/src/main/java/ -type f | grep "\.java") -d $OUTDIR $STYLESHEET $DOCLETPATH $DOCLET $EXTRA1 $EXTRA2
+javadoc $(find libeventful/src/main/java/in/tosc/eventful/ -type f | grep "\.java") -d $OUTDIR $STYLESHEET $DOCLETPATH $DOCLET $EXTRA1 $EXTRA2
 
 ### module:sampleApp ###
 #javadoc $(find sampleApp/src/main/java/ -type f | grep "\.java") -d $OUTDIR $STYLESHEET $DOCLETPATH $DOCLET $EXTRA1 $EXTRA2
