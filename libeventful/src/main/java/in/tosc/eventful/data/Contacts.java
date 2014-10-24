@@ -2,9 +2,6 @@ package in.tosc.eventful.data;
 
 import android.content.Context;
 
-/**
- * Created by championswimmer on 24/2/14.
- */
 public class Contacts {
 
     private Context c;

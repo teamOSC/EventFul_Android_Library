@@ -18,6 +18,11 @@ import in.tosc.eventful.utils.EventFulFragment;
  */
 public class MainNavActivity extends MainDrawerActivity {
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        finish();
+    }
 
     @Override
     public void prepareTopFragments() {

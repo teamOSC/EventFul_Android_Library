@@ -4,7 +4,7 @@
 ###########################################################
 THIS=$(readlink -f "$0")
 HERE=$(dirname "$THIS")
-OUTDIR="/home/championswimmer/android/eventful_docs"
+OUTDIR="$HERE/documentation"
 STYLESHEET=""
 DOCLETPATH=""
 DOCLET=""
@@ -16,10 +16,10 @@ EXTRA2=""
 #customs (only uncomment one doclet)
 
 ### doclet: doclava ###
-#DOCLETPATH="-docletpath $HERE/javadoc/doclava.jar"
-#DOCLET="-doclet com.google.doclava.Doclava"
-#EXTRA1="-hdf project.name \"Eventful\" "
-#EXTRA2="-XDignore.symbol.file"
+DOCLETPATH="-docletpath $HERE/javadoc/doclava.jar"
+DOCLET="-doclet com.google.doclava.Doclava"
+EXTRA1="-hdf project.name \"Eventful\" "
+EXTRA2="-XDignore.symbol.file"
 
 ### doclet: apiviz ###
 #STYLESHEET="-stylesheetfile $HERE/javadoc/stylesheet.css"
@@ -40,7 +40,7 @@ cd $HERE
 
 
 ### module:libeventful ###
-javadoc $(find libeventful/src/main/java/ -type f | grep "\.java") -d $OUTDIR $STYLESHEET $DOCLETPATH $DOCLET $EXTRA1 $EXTRA2
+javadoc $(find libeventful/src/main/java/in/tosc/eventful/ -type f | grep "\.java") -d $OUTDIR $STYLESHEET $DOCLETPATH $DOCLET $EXTRA1 $EXTRA2
 
 ### module:sampleApp ###
 #javadoc $(find sampleApp/src/main/java/ -type f | grep "\.java") -d $OUTDIR $STYLESHEET $DOCLETPATH $DOCLET $EXTRA1 $EXTRA2
