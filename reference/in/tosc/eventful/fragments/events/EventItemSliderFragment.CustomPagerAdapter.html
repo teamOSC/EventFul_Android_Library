@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../favicon.ico" />
 <title>
 
-  EventSingleItemFragment
+  EventItemSliderFragment.CustomPagerAdapter
 
 
 | "Eventful"
@@ -174,8 +174,8 @@
           <li class="api apilevel-"><a href="../../../../../in/tosc/eventful/fragments/events/EventDaySliderFragment.html">EventDaySliderFragment</a></li>
           <li class="api apilevel-"><a href="../../../../../in/tosc/eventful/fragments/events/EventFragment.html">EventFragment</a></li>
           <li class="api apilevel-"><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.html">EventItemSliderFragment</a></li>
-          <li class="api apilevel-"><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.CustomPagerAdapter.html">EventItemSliderFragment.CustomPagerAdapter</a></li>
-          <li class="selected api apilevel-"><a href="../../../../../in/tosc/eventful/fragments/events/EventSingleItemFragment.html">EventSingleItemFragment</a></li>
+          <li class="selected api apilevel-"><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.CustomPagerAdapter.html">EventItemSliderFragment.CustomPagerAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../../in/tosc/eventful/fragments/events/EventSingleItemFragment.html">EventSingleItemFragment</a></li>
       </ul>
     </li>
               
@@ -279,7 +279,7 @@ Summary:
      
     
     class
-<h1>EventSingleItemFragment</h1>
+<h1>EventItemSliderFragment.CustomPagerAdapter</h1>
 
 
 
@@ -288,7 +288,7 @@ Summary:
   
 
   
-    extends Fragment<br/>
+    extends FragmentPagerAdapter<br/>
   
   
   
@@ -316,7 +316,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="2" class="jd-inheritance-class-cell">Fragment</td>
+        <td colspan="2" class="jd-inheritance-class-cell">FragmentPagerAdapter</td>
     </tr>
     
 
@@ -326,7 +326,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">in.tosc.eventful.fragments.events.EventSingleItemFragment</td>
+        <td colspan="1" class="jd-inheritance-class-cell">in.tosc.eventful.fragments.events.EventItemSliderFragment.CustomPagerAdapter</td>
     </tr>
     
 
@@ -340,11 +340,6 @@ Summary:
 
 <div class="jd-descr">
 
-
-<h2>Class Overview</h2>
-<p>Use the <code><a href="../../../../../in/tosc/eventful/fragments/events/EventSingleItemFragment.html#newInstance(java.lang.String, java.lang.String)">newInstance(String, String)</a></code> factory method to
- create an instance of this fragment.
-</p>
 
 
 
@@ -410,7 +405,7 @@ Summary:
             
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../in/tosc/eventful/fragments/events/EventSingleItemFragment.html#EventSingleItemFragment()">EventSingleItemFragment</a></span>()
+        <span class="sympad"><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.CustomPagerAdapter.html#EventItemSliderFragment.CustomPagerAdapter(FragmentManager)">EventItemSliderFragment.CustomPagerAdapter</a></span>(FragmentManager fm)
         
   </td></tr>
 
@@ -434,16 +429,13 @@ Summary:
             
             
             
-            static
             
-            <a href="../../../../../in/tosc/eventful/fragments/events/EventSingleItemFragment.html">EventSingleItemFragment</a>
+            
+            int
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../in/tosc/eventful/fragments/events/EventSingleItemFragment.html#newInstance(java.lang.String, java.lang.String)">newInstance</a></span>(String param1, String param2)
+        <span class="sympad"><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.CustomPagerAdapter.html#getCount()">getCount</a></span>()
         
-        <div class="jd-descrdiv">Use this factory method to create a new instance of
- this fragment using the provided parameters.</div>
-  
   </td></tr>
 
 
@@ -455,10 +447,10 @@ Summary:
             
             
             
-            void
+            Fragment
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../in/tosc/eventful/fragments/events/EventSingleItemFragment.html#onCreate(Bundle)">onCreate</a></span>(Bundle savedInstanceState)
+        <span class="sympad"><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.CustomPagerAdapter.html#getItem(int)">getItem</a></span>(int position)
         
   </td></tr>
 
@@ -471,10 +463,10 @@ Summary:
             
             
             
-            View
+            CharSequence
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../in/tosc/eventful/fragments/events/EventSingleItemFragment.html#onCreateView(LayoutInflater, ViewGroup, Bundle)">onCreateView</a></span>(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+        <span class="sympad"><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.CustomPagerAdapter.html#getPageTitle(int)">getPageTitle</a></span>(int position)
         
   </td></tr>
 
@@ -731,7 +723,7 @@ From class
 
 
 
-<a id="EventSingleItemFragment()"></a>
+<a id="EventItemSliderFragment.CustomPagerAdapter(FragmentManager)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -743,8 +735,8 @@ From class
          
         
       </span>
-      <span class="sympad">EventSingleItemFragment</span>
-      <span class="normal">()</span>
+      <span class="sympad">EventItemSliderFragment.CustomPagerAdapter</span>
+      <span class="normal">(FragmentManager fm)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -777,57 +769,7 @@ From class
 
 
 
-<a id="newInstance(java.lang.String, java.lang.String)"></a>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-         
-         
-         
-        <a href="../../../../../in/tosc/eventful/fragments/events/EventSingleItemFragment.html">EventSingleItemFragment</a>
-      </span>
-      <span class="sympad">newInstance</span>
-      <span class="normal">(String param1, String param2)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Use this factory method to create a new instance of
- this fragment using the provided parameters.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>param1</th>
-          <td>Parameter 1.</td>
-        </tr>
-        <tr>
-          <th>param2</th>
-          <td>Parameter 2.</td>
-        </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>A new instance of fragment EventSingleItemFragment.
-</li></ul>
-  </div>
-
-    </div>
-</div>
-
-
-<a id="onCreate(Bundle)"></a>
+<a id="getCount()"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -837,10 +779,10 @@ From class
          
          
          
-        void
+        int
       </span>
-      <span class="sympad">onCreate</span>
-      <span class="normal">(Bundle savedInstanceState)</span>
+      <span class="sympad">getCount</span>
+      <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
@@ -858,7 +800,7 @@ From class
 </div>
 
 
-<a id="onCreateView(LayoutInflater, ViewGroup, Bundle)"></a>
+<a id="getItem(int)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -868,10 +810,41 @@ From class
          
          
          
-        View
+        Fragment
       </span>
-      <span class="sympad">onCreateView</span>
-      <span class="normal">(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)</span>
+      <span class="sympad">getItem</span>
+      <span class="normal">(int position)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<a id="getPageTitle(int)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        CharSequence
+      </span>
+      <span class="sympad">getPageTitle</span>
+      <span class="normal">(int position)</span>
     </h4>
       <div class="api-level">
         <div>

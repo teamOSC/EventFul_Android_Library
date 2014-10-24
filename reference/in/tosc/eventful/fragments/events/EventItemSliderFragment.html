@@ -145,8 +145,6 @@
               <ul>
                 
     <li class="api apilevel-">
-  <a href="../../../../../com/astuetz/package-summary.html">com.astuetz</a></li>
-    <li class="api apilevel-">
   <a href="../../../../../in/tosc/eventful/package-summary.html">in.tosc.eventful</a></li>
     <li class="api apilevel-">
   <a href="../../../../../in/tosc/eventful/activities/package-summary.html">in.tosc.eventful.activities</a></li>
@@ -174,7 +172,9 @@
     <li><h2>Classes</h2>
       <ul>
           <li class="api apilevel-"><a href="../../../../../in/tosc/eventful/fragments/events/EventDaySliderFragment.html">EventDaySliderFragment</a></li>
+          <li class="api apilevel-"><a href="../../../../../in/tosc/eventful/fragments/events/EventFragment.html">EventFragment</a></li>
           <li class="selected api apilevel-"><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.html">EventItemSliderFragment</a></li>
+          <li class="api apilevel-"><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.CustomPagerAdapter.html">EventItemSliderFragment.CustomPagerAdapter</a></li>
           <li class="api apilevel-"><a href="../../../../../in/tosc/eventful/fragments/events/EventSingleItemFragment.html">EventSingleItemFragment</a></li>
       </ul>
     </li>
@@ -237,6 +237,8 @@
 
 Summary:
 
+  <a href="#nestedclasses">Nested Classes</a>
+  
 
 
 
@@ -245,7 +247,8 @@ Summary:
 
 
 
-  <a href="#pubctors">Ctors</a>
+
+  &#124; <a href="#pubctors">Ctors</a>
   
 
 
@@ -342,7 +345,7 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p>Use the <code><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.html#newInstance(java.lang.String, java.lang.String)">newInstance(String, String)</a></code> factory method to
+<p>Use the <code><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.html#newInstance(in.tosc.eventful.data.EventfulEvent)">newInstance(EventfulEvent)</a></code> factory method to
  create an instance of this fragment.
 </p>
 
@@ -372,6 +375,27 @@ Summary:
 
 <h2>Summary</h2>
 
+
+
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<table id="nestedclasses" class="jd-sumtable"><tr><th colspan="12">Nested Classes</th></tr>
+
+
+  
+    <tr class="alt-color api apilevel-" >
+      <td class="jd-typecol">
+        
+         
+         
+        
+        class</td>
+      <td class="jd-linkcol"><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.CustomPagerAdapter.html">EventItemSliderFragment.CustomPagerAdapter</a></td>
+      <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+
+</table>
 
 
 
@@ -439,7 +463,7 @@ Summary:
             <a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.html">EventItemSliderFragment</a>
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.html#newInstance(java.lang.String, java.lang.String)">newInstance</a></span>(String param1, String param2)
+        <span class="sympad"><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.html#newInstance(in.tosc.eventful.data.EventfulEvent)">newInstance</a></span>(<a href="../../../../../in/tosc/eventful/data/EventfulEvent.html">EventfulEvent</a> events)
         
         <div class="jd-descrdiv">Use this factory method to create a new instance of
  this fragment using the provided parameters.</div>
@@ -475,6 +499,22 @@ Summary:
         </td>
         <td class="jd-linkcol" width="100%">
         <span class="sympad"><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.html#onCreateView(LayoutInflater, ViewGroup, Bundle)">onCreateView</a></span>(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.html#onDetach()">onDetach</a></span>()
         
   </td></tr>
 
@@ -777,7 +817,7 @@ From class
 
 
 
-<a id="newInstance(java.lang.String, java.lang.String)"></a>
+<a id="newInstance(in.tosc.eventful.data.EventfulEvent)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -790,7 +830,7 @@ From class
         <a href="../../../../../in/tosc/eventful/fragments/events/EventItemSliderFragment.html">EventItemSliderFragment</a>
       </span>
       <span class="sympad">newInstance</span>
-      <span class="normal">(String param1, String param2)</span>
+      <span class="normal">(<a href="../../../../../in/tosc/eventful/data/EventfulEvent.html">EventfulEvent</a> events)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -803,17 +843,14 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Use this factory method to create a new instance of
- this fragment using the provided parameters.</p></div>
+ this fragment using the provided parameters.
+c</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
-          <th>param1</th>
-          <td>Parameter 1.</td>
-        </tr>
-        <tr>
-          <th>param2</th>
-          <td>Parameter 2.</td>
+          <th>events</th>
+          <td>EventfulEvent object of the events.</td>
         </tr>
       </table>
   </div>
@@ -872,6 +909,37 @@ From class
       </span>
       <span class="sympad">onCreateView</span>
       <span class="normal">(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<a id="onDetach()"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">onDetach</span>
+      <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
